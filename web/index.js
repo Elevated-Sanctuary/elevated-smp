@@ -9,7 +9,7 @@ let is_homepage = true;
 // ----------------------------------------------------
 
 async function get_server_data() {
-    let response = await fetch("../data/serverdata.json");
+    let response = await fetch("./data/serverdata.json");
     serverdata = await response.json();
     return serverdata;
 }
