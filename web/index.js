@@ -15,7 +15,7 @@ async function get_server_data() {
 }
 
 function play_audio(default_volume = 0.5) {
-    const audio = new Audio("/audio/ariamath.mp3");
+    const audio = new Audio("./audio/ariamath.mp3");
     audio.loop = true;
 
     const muteBtn = document.getElementById("muteBtn");
