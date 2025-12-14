@@ -1,7 +1,7 @@
 {
-    "name": "Bare bones",
+    "name": "Bare Bones",
     "desc": "Required to be able to join the server.",
-    "recommended": false,
+    "recommended": 0,
     "mods": [
         {
             "name": "AdventureZ",

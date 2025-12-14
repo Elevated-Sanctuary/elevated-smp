@@ -60,47 +60,89 @@
             <p class="m-0 text-wrap text-light text-center title">Installation guide</p>
             <div class="install-step d-flex flex-wrap mt-3 justify-content-center gap-5">
                 <div class="card" style="width: 24rem;">
-                    <div class="card-body" style="flex: 0 0 auto;">
+                    <div class="card-body mb-0" style="flex: 0 0 auto;">
                         <h5 class="card-title"><b>1.</b> Install Fabric</h5>
                         <p class="card-text">Download and install fabric</p>
-                        <ul>
+                        <ul class="mb-0">
                             <li class="card-text" id="append-version">Select Minecraft version </li>
                             <li class="card-text">Check the "Create Profile" box</li>
                         </ul>
-                        <a href="https://fabricmc.net/use/installer/" class="btn btn-primary d-block mx-auto" target="_blank">Download Fabric</a>
+                        <a href="https://fabricmc.net/use/installer/" class="btn btn-secondary d-block mx-auto" target="_blank">Download Fabric</a>
                     </div>
                     <img src="./img/install-1.png" class="card-img-bottom" alt="...">
                 </div>
                 <div class="card" style="width: 24rem;">
-                    <div class="card-body" style="flex: 0 0 auto;">
+                    <div class="card-body mb-0" style="flex: 0 0 auto;">
                         <h5 class="card-title"><b>2.</b> Download the mods</h5>
                         <p class="card-text">Mods are provided below</p>
-                        <ul>
+                        <ul class="mb-0">
                             <li class="card-text">Win + R <i class="bi bi-arrow-right"></i> %appdata% <i class="bi bi-arrow-right"></i> .minecraft</li>
-                            <li class="card-text">locate "mods" folder, if there's none, create one</li>
-                            <li class="card-text">Place the downloaded mods into the "mods" folder</li>
+                            <li class="card-text">Locate "mods" folder, if there's none, create one</li>
+                            <li class="card-text">Unzip and place the downloaded mods into the "mods" folder</li>
                         </ul>
-                        <a onclick="event.preventDefault(); scrollto('mods-section')" class="btn btn-primary d-block mx-auto">Download Mods</a>
+                        <a onclick="event.preventDefault(); scrollto('mods-section')" class="btn btn-secondary d-block mx-auto">Download Mods</a>
                     </div>
                 </div>
                 <div class="card" style="width: 24rem;">
-                    <div class="card-body" style="flex: 0 0 auto;">
-                        <h5 class="card-title"><b>3.</b> Launch the game</h5>
-                        <p class="card-text">Mods are provided below</p>
-                        <ul>
+                    <div class="card-body mb-0" style="flex: 0 0 auto;">
+                        <h5 class="card-title"><b>3.</b> Configure the game</h5>
+                        <p class="card-text">Increase allocated memory in the Installation tab</p>
+                        <ul class="mb-0">
                             <li class="card-text">Open Minecraft Launcher</li>
-                            <li class="card-text">Change profile on the bottom left</li>
-                            <li class="card-text">Select the Fabric profile</li>
-                            <li class="card-text">Click "Play"</li>
+                            <li class="card-text">Installation tab</li>
+                            <li class="card-text">Select the installed Fabric profile</li>
+                            <li class="card-text">More options <i class="bi bi-arrow-right"></i> JVM Arguments</li>
+                            <li class="card-text">Change -Xmx2G to a higher value based on your system's RAM e.g., -Xmx8G for 16GB RAM (30-70% recommended)</li>
                         </ul>
                     </div>
                     <img src="./img/install-3.png" class="card-img-bottom" alt="...">
                 </div>
+                <div class="card" style="width: 24rem;">
+                    <div class="card-body mb-0" style="flex: 0 0 auto;">
+                        <h5 class="card-title"><b>4.</b> Launch the game</h5>
+                        <p class="card-text">Increase allocated memory in the Installation tab</p>
+                        <ul class="mb-0">
+                            <li class="card-text">Open Minecraft Launcher</li>
+                            <li class="card-text">Change profile on the bottom left</li>
+                            <li class="card-text">Select the installed Fabric profile</li>
+                            <li class="card-text">Click "Play"</li>
+                        </ul>
+                    </div>
+                    <img src="./img/install-4.png" class="card-img-bottom" alt="...">
+                </div>
             </div>
         </div>
-        <div class="mods d-flex flex-column m-lg-auto my-auto mx-5" id="mods-section">
+        <div class="mods d-flex flex-column my-auto px-5 mx-5" id="mods-section">
             <p class="m-0 text-wrap text-light text-center title">Mods</p>
-
+            <p class="m-0 text-wrap text-light text-center fs-3">Select a modpack to download the required mods</p>
+            <div class="mod-barebone d-flex flex-column flex-wrap mt-3" id="mod-barebone">
+                <div class="d-flex gap-4" id="mod-header">
+                    <p class="m-0 text-wrap text-light title fs-1" id="mod-title"></p>
+                    <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
+                </div>      
+                <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+            </div>
+            <div class="mod-optimized d-flex flex-column flex-wrap mt-3" id="mod-optimized">
+                <div class="d-flex gap-4" id="mod-header">
+                    <p class="m-0 text-wrap text-light title fs-1" id="mod-title"></p>
+                    <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
+                </div>   
+                <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+            </div>
+            <div class="mod-extreme d-flex flex-column flex-wrap mt-3" id="mod-extreme">
+                <div class="d-flex gap-4" id="mod-header">
+                    <p class="m-0 text-wrap text-light title fs-1" id="mod-title"></p>
+                    <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
+                </div>   
+                <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+            </div>
+            <div class="mod-addition d-flex flex-column flex-wrap mt-3" id="mod-addition">
+                <div class="d-flex gap-4" id="mod-header">
+                    <p class="m-0 text-wrap text-light title fs-1" id="mod-title"></p>
+                    <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
+                </div>   
+                <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+            </div>
         </div>
     </section>
 </body>

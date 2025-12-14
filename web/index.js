@@ -14,6 +14,28 @@ async function get_server_data() {
     return serverdata;
 }
 
+async function load_mod_data(mod_list) {
+    for (let mod_filename of mod_list) {
+        console.log(`Loading mod data for ${mod_filename}...`);
+        let response = await fetch(`./data/mod_${mod_filename}.json`);
+        console.log(response);
+        let moddata = await response.json();
+        if (moddata != null && document.getElementById(`mod-${mod_filename}`) != null) {
+            let mod_elem = document.getElementById(`mod-${mod_filename}`);
+            mod_elem.querySelector("#mod-title").innerHTML = moddata.name;
+            mod_elem.querySelector("#mod-desc").innerHTML = moddata.desc;
+            if (moddata.recommended == 1) {
+                mod_elem.querySelector("#mod-recommended").innerHTML += " [Recommended]";
+                mod_elem.querySelector("#mod-recommended").style.color = "rgba(0, 255, 0, 1)";
+            }
+            else if (moddata.recommended == -1) {
+                mod_elem.querySelector("#mod-recommended").innerHTML += " [Not Recommended]";
+                mod_elem.querySelector("#mod-recommended").style.color = "rgba(255, 0, 0, 1)";
+            }
+        }
+    }
+}
+
 function play_audio(default_volume = 0.5) {
     const audio = new Audio("./audio/ariamath.mp3");
     audio.loop = true;
@@ -48,11 +70,11 @@ function scrolldir(dir) {
 function home_scroll(dir) {
     if (is_homepage && dir == "down") {
         is_homepage = false;
-        document.body.classList.add("scrolled");
+        document.body.classList.add("scrolled");      
     }
     else if (!is_homepage && dir == "up" && window.scrollY == 0) {
         is_homepage = true;
-        document.body.classList.remove("scrolled");
+        document.body.classList.remove("scrolled");    
     }
 }
 
@@ -99,3 +121,4 @@ window.addEventListener("scroll", () => {
 });
 
 play_audio(default_volume);
+load_mod_data(['addition', 'barebone', 'extreme', 'optimized'])

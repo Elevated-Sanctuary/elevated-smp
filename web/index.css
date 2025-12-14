@@ -30,6 +30,8 @@ p.title {
         padding: 5px 20px 20px 20px;
     }
     a {
+        color: aliceblue;
+        margin-top: 0.5rem;
         background-color: rgb(110, 110, 110, 1);
         border: 2px solid rgba(157, 157, 157, 1);
         border-radius: 0;
@@ -61,7 +63,8 @@ header {
 
 .main-page {
     opacity: 0;
-    transform: translateY(30px); /* slightly lowered */
+    transform: translateY(30px);
+    pointer-events: none;
 }
 
 .scrolled header {
@@ -72,6 +75,7 @@ header {
 .scrolled .main-page {
     opacity: 1;
     transform: translateY(0);
+    pointer-events: auto;
 }
 
 /* Audio control styles */
