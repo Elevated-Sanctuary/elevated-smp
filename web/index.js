@@ -16,14 +16,14 @@ async function get_server_data() {
 
 async function load_mod_data(mod_list) {
     for (let mod_filename of mod_list) {
-        console.log(`Loading mod data for ${mod_filename}...`);
         let response = await fetch(`./data/mod_${mod_filename}.json`);
-        console.log(response);
         let moddata = await response.json();
         if (moddata != null && document.getElementById(`mod-${mod_filename}`) != null) {
             let mod_elem = document.getElementById(`mod-${mod_filename}`);
+            let table_elem = mod_elem.querySelector("#mod-table-body");
             mod_elem.querySelector("#mod-title").innerHTML = moddata.name;
             mod_elem.querySelector("#mod-desc").innerHTML = moddata.desc;
+            mod_elem.querySelector(".download-btn").href = moddata.download_link;
             if (moddata.recommended == 1) {
                 mod_elem.querySelector("#mod-recommended").innerHTML += " [Recommended]";
                 mod_elem.querySelector("#mod-recommended").style.color = "rgba(0, 255, 0, 1)";
@@ -31,6 +31,15 @@ async function load_mod_data(mod_list) {
             else if (moddata.recommended == -1) {
                 mod_elem.querySelector("#mod-recommended").innerHTML += " [Not Recommended]";
                 mod_elem.querySelector("#mod-recommended").style.color = "rgba(255, 0, 0, 1)";
+            }
+            for (let mod of moddata.mods) {
+                table_elem.innerHTML += `
+                <tr>
+                    <td>${mod.name}</td>
+                    <td>${mod.description}</td>
+                    <td class="mod-link"><a href="${mod.link}" target="_blank">${mod.link}</a></td>
+                </tr>
+                `;
             }
         }
     }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elevated SMP</title>
-    <link rel="icon" type="image/x-icon" href="./img/web-icon.png">
+    <link rel="icon" type="image/x-icon" href="./img/web-icon.webp">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./web/index.css">
 
@@ -37,7 +37,7 @@
         style="width: 100vw; height: 100vh; position: fixed;">
         <div class="d-flex flex-column m-lg-auto my-auto mx-5 align-items-center">
             <p class="m-0 text-wrap text-light text-center"
-                style="font-size: clamp(3rem, 6.9vw, 6.9rem); max-width: 80vw; font-family: 'Minecraft Title', sans-serif;"
+                style="font-size: clamp(3rem, 6vw, 6.9rem); max-width: 80vw; font-family: 'Minecraft Title', sans-serif;"
                 id="server-name">
                 Elevated SMP
             </p>
@@ -59,7 +59,7 @@
         <div class="install-guide d-flex flex-column m-lg-auto my-auto mx-5">
             <p class="m-0 text-wrap text-light text-center title">Installation guide</p>
             <div class="install-step d-flex flex-wrap mt-3 justify-content-center gap-5">
-                <div class="card" style="width: 24rem;">
+                <div class="card" style="width: clamp(12rem, 20vw, 24rem)">
                     <div class="card-body mb-0" style="flex: 0 0 auto;">
                         <h5 class="card-title"><b>1.</b> Install Fabric</h5>
                         <p class="card-text">Download and install fabric</p>
@@ -69,9 +69,9 @@
                         </ul>
                         <a href="https://fabricmc.net/use/installer/" class="btn btn-secondary d-block mx-auto" target="_blank">Download Fabric</a>
                     </div>
-                    <img src="./img/install-1.png" class="card-img-bottom" alt="...">
+                    <img src="./img/install-1.webp" class="card-img-bottom" alt="...">
                 </div>
-                <div class="card" style="width: 24rem;">
+                <div class="card" style="width: clamp(12rem, 20vw, 24rem)">
                     <div class="card-body mb-0" style="flex: 0 0 auto;">
                         <h5 class="card-title"><b>2.</b> Download the mods</h5>
                         <p class="card-text">Mods are provided below</p>
@@ -83,7 +83,7 @@
                         <a onclick="event.preventDefault(); scrollto('mods-section')" class="btn btn-secondary d-block mx-auto">Download Mods</a>
                     </div>
                 </div>
-                <div class="card" style="width: 24rem;">
+                <div class="card" style="width: clamp(12rem, 20vw, 24rem)">
                     <div class="card-body mb-0" style="flex: 0 0 auto;">
                         <h5 class="card-title"><b>3.</b> Configure the game</h5>
                         <p class="card-text">Increase allocated memory in the Installation tab</p>
@@ -95,9 +95,9 @@
                             <li class="card-text">Change -Xmx2G to a higher value based on your system's RAM e.g., -Xmx8G for 16GB RAM (30-70% recommended)</li>
                         </ul>
                     </div>
-                    <img src="./img/install-3.png" class="card-img-bottom" alt="...">
+                    <img src="./img/install-3.webp" class="card-img-bottom" alt="...">
                 </div>
-                <div class="card" style="width: 24rem;">
+                <div class="card" style="width: clamp(12rem, 20vw, 24rem)">
                     <div class="card-body mb-0" style="flex: 0 0 auto;">
                         <h5 class="card-title"><b>4.</b> Launch the game</h5>
                         <p class="card-text">Increase allocated memory in the Installation tab</p>
@@ -108,7 +108,7 @@
                             <li class="card-text">Click "Play"</li>
                         </ul>
                     </div>
-                    <img src="./img/install-4.png" class="card-img-bottom" alt="...">
+                    <img src="./img/install-4.webp" class="card-img-bottom" alt="...">
                 </div>
             </div>
         </div>
@@ -121,6 +121,21 @@
                     <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
                 </div>      
                 <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+                <a href="" class="btn btn-secondary d-block download-btn" target="_blank">Download Mods</a>
+                <details class="mod-dropdown">
+                    <summary>View Mods</summary>
+                    <table class="mod-table">
+                        <thead>
+                            <tr class="table-head fs-5">
+                                <th>Mod</th>
+                                <th>Description</th>
+                                <th>Modrinth</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mod-table-body">
+                        </tbody>
+                    </table>
+                </details>
             </div>
             <div class="mod-optimized d-flex flex-column flex-wrap mt-3" id="mod-optimized">
                 <div class="d-flex gap-4" id="mod-header">
@@ -128,6 +143,21 @@
                     <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
                 </div>   
                 <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+                <a href="" class="btn btn-secondary d-block download-btn" target="_blank">Download Mods</a>
+                <details class="mod-dropdown">
+                    <summary>View Mods</summary>
+                    <table class="mod-table">
+                        <thead>
+                            <tr class="table-head fs-5">
+                                <th>Mod</th>
+                                <th>Description</th>
+                                <th>Modrinth</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mod-table-body">
+                        </tbody>
+                    </table>
+                </details>
             </div>
             <div class="mod-extreme d-flex flex-column flex-wrap mt-3" id="mod-extreme">
                 <div class="d-flex gap-4" id="mod-header">
@@ -135,6 +165,21 @@
                     <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
                 </div>   
                 <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+                <a href="" class="btn btn-secondary d-block download-btn" target="_blank">Download Mods</a>
+                <details class="mod-dropdown">
+                    <summary>View Mods</summary>
+                    <table class="mod-table">
+                        <thead>
+                            <tr class="table-head fs-5">
+                                <th>Mod</th>
+                                <th>Description</th>
+                                <th>Modrinth</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mod-table-body">
+                        </tbody>
+                    </table>
+                </details>
             </div>
             <div class="mod-addition d-flex flex-column flex-wrap mt-3" id="mod-addition">
                 <div class="d-flex gap-4" id="mod-header">
@@ -142,6 +187,21 @@
                     <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
                 </div>   
                 <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+                <a href="" class="btn btn-secondary d-none download-btn" target="_blank">Download Mods</a>
+                <details class="mod-dropdown">
+                    <summary>View Additional Mods</summary>
+                    <table class="mod-table">
+                        <thead>
+                            <tr class="table-head fs-5">
+                                <th>Mod</th>
+                                <th>Description</th>
+                                <th>Modrinth</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mod-table-body">
+                        </tbody>
+                    </table>
+                </details>
             </div>
         </div>
     </section>
