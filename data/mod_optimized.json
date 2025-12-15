@@ -2,7 +2,62 @@
     "name": "Optimized",
     "desc": "Added optimizations for better performance",
     "recommended": 1,
-    "download_link": "",
+    "download_link": "https://drive.google.com/file/d/19R5uhB_g2dNJqM9qtIcbGBWrHwc4ZHJh/view?usp=sharing",
     "mods": [
+        {
+            "name": "Sodium",
+            "description": "Rendering optimization",
+            "link": "https://modrinth.com/mod/sodium/version/mc1.21.1-0.6.5-fabric"
+        },
+        {
+            "name": "Sodium Extra",
+            "description": "Sodium Addon",
+            "link": "https://modrinth.com/mod/sodium-extra/version/mc1.21.1-0.6.0+fabric"
+        },
+        {
+            "name": "Reese's Sodium Options",
+            "description": "Alternative Options Menu for Sodium",
+            "link": "https://modrinth.com/mod/reeses-sodium-options/version/mc1.21.4-1.8.3+fabric"
+        },
+        {
+            "name": "Bad Optimizations",
+            "description": "Micro render optimizations",
+            "link": "https://modrinth.com/mod/badoptimizations/version/gTsJRSdq"
+        },
+        {
+            "name": "Enhanced Block Entities",
+            "description": "Reduce block entity FPS lag",
+            "link": "https://modrinth.com/mod/ebe/version/0.10.2+1.21"
+        },
+        {
+            "name": "Entity Culling",
+            "description": "Hides Blocks/Entities that are not visible",
+            "link": "https://modrinth.com/mod/entityculling/version/MQuJQtw8"
+        },
+        {
+            "name": "FerriteCore",
+            "description": "Memory usage optimizations",
+            "link": "https://modrinth.com/mod/ferrite-core/version/7.0.2-hotfix-fabric"
+        },
+        {
+            "name": "ImmediatelyFast",
+            "description": "Speeds up immediate mode rendering in Minecraft",
+            "link": "https://modrinth.com/mod/immediatelyfast/version/1.3.3+1.21.1-fabric"
+        },
+        {
+            "name": "Lithium",
+            "description": "Game logic optimization",
+            "link": "https://modrinth.com/mod/lithium/version/mc1.21.1-0.14.6-fabric"
+        },
+        {
+            "name": "ModernFix",
+            "description": "All-in-one mod that improves performance and fixes many bugs",
+            "link": "https://modrinth.com/mod/modernfix/version/5.20.0+mc1.21.1"
+        },
+        {
+            "name": "Noisium",
+            "description": "Optimizes worldgen performance",
+            "link": "https://modrinth.com/mod/noisium/version/2.3.0+mc1.21-1.21.1"
+        }
     ]
 }

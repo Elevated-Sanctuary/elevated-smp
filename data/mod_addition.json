@@ -4,5 +4,60 @@
     "recommended": 0,
     "download_link": "",
     "mods": [
+        {
+            "name": "Ambient Sounds",
+            "description": "Adds a rich ambience to the Minecraft world",
+            "link": "https://modrinth.com/mod/ambientsounds/version/ybXRUW4r"
+        },
+        {
+            "name": "Presence Footsteps",
+            "description": "Adds realistic footstep sounds",
+            "link": "https://modrinth.com/mod/presence-footsteps/version/1.11.0+1.21"
+        },
+        {
+            "name": "AppleSkin",
+            "description": "Food/hunger-related HUD improvements",
+            "link": "https://modrinth.com/mod/appleskin/version/3.0.6+mc1.21"
+        },
+        {
+            "name": "Continuity",
+            "description": "Allows for connected textures",
+            "link": "https://modrinth.com/mod/continuity/version/3.0.0+1.21"
+        },
+        {
+            "name": "Distant Horizons",
+            "description": "Adds simplified terrain past Minecraft's default view distance to improve performance",
+            "link": "https://modrinth.com/mod/distanthorizons/version/2.2.1-a-1.21.1"
+        },
+        {
+            "name": "Do a Barrel Roll",
+            "description": "Changes elytra flight to be more fun and semi-realistic",
+            "link": "https://modrinth.com/mod/do-a-barrel-roll/version/3.7.3+1.21-fabric"
+        },
+        {
+            "name": "Gamma Utils",
+            "description": "Gamma / Brightness / Night Vision mod",
+            "link": "https://modrinth.com/mod/gamma-utils/version/2.1.2"
+        },
+        {
+            "name": "LambDynamicLights",
+            "description": "Adds dynamic lights to Minecraft",
+            "link": "https://modrinth.com/mod/lambdynamiclights/version/4.1.2+1.21.1"
+        },
+        {
+            "name": "Roughly Enough Items",
+            "description": "Item and recipe viewing mod",
+            "link": "https://modrinth.com/mod/rei/version/16.0.799+fabric"
+        },
+        {
+            "name": "Xaero's Minimap",
+            "description": "Displays a map of the nearby world terrain, players, mobs, entities",
+            "link": "https://modrinth.com/mod/xaeros-minimap/version/25.2.10_Fabric_1.21"
+        },
+        {
+            "name": "Xaero's World Map",
+            "description": "Adds a full screen world map",
+            "link": "https://modrinth.com/mod/xaeros-world-map/version/1.39.12_Fabric_1.21"
+        }
     ]
 }

@@ -37,12 +37,12 @@
         style="width: 100vw; height: 100vh; position: fixed;">
         <div class="d-flex flex-column m-lg-auto my-auto mx-5 align-items-center">
             <p class="m-0 text-wrap text-light text-center"
-                style="font-size: clamp(3rem, 6vw, 6.9rem); max-width: 80vw; font-family: 'Minecraft Title', sans-serif;"
+                style="font-size: clamp(3rem, 6vw, 6.9rem); max-width: 80vw; font-family: 'Minecraft Title', sans-serif; text-shadow: 4px 4px 0 black;"
                 id="server-name">
                 Elevated SMP
             </p>
             <p class="m-0 text-wrap text-light text-center"
-                style="font-size: clamp(1rem, 2.3vw, 2.3rem); max-width: 80vw; font-family: 'Minecraft Regular', sans-serif;"
+                style="font-size: clamp(1rem, 2.3vw, 2.3rem); max-width: 80vw; font-family: 'Minecraft Regular', sans-serif; text-shadow: 2px 2px 0 black;"
                 id="server-desc">
                 Do not question.. <i>The ELEVATED One</i>
             </p>
@@ -114,13 +114,13 @@
         </div>
         <div class="mods d-flex flex-column my-auto px-5 mx-5" id="mods-section">
             <p class="m-0 text-wrap text-light text-center title">Mods</p>
-            <p class="m-0 text-wrap text-light text-center fs-3">Select a modpack to download the required mods</p>
+            <p class="m-0 text-wrap text-light text-center fs-3" style="text-shadow: 2px 2px 0 black;">Select a modpack to download the required mods</p>
             <div class="mod-barebone d-flex flex-column flex-wrap mt-3" id="mod-barebone">
                 <div class="d-flex flex-wrap gap-lg-4 gap-md-4 gap-sm-0" id="mod-header">
                     <p class="m-0 text-wrap text-light title fs-1" id="mod-title"></p>
                     <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
                 </div>      
-                <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+                <p class="m-0 text-wrap text-light fs-4" id="mod-desc" style="text-shadow: 2px 2px 0 black;"></p>
                 <a href="" class="btn btn-secondary d-block download-btn" target="_blank">Download Mods</a>
                 <details class="mod-dropdown">
                     <summary>View Mods</summary>
@@ -142,7 +142,7 @@
                     <p class="m-0 text-wrap text-light title fs-1" id="mod-title"></p>
                     <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
                 </div>   
-                <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+                <p class="m-0 text-wrap text-light fs-4" id="mod-desc" style="text-shadow: 2px 2px 0 black;"></p>
                 <a href="" class="btn btn-secondary d-block download-btn" target="_blank">Download Mods</a>
                 <details class="mod-dropdown">
                     <summary>View Mods</summary>
@@ -164,7 +164,7 @@
                     <p class="m-0 text-wrap text-light title fs-1" id="mod-title"></p>
                     <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
                 </div>   
-                <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+                <p class="m-0 text-wrap text-light fs-4" id="mod-desc" style="text-shadow: 2px 2px 0 black;"></p>
                 <a href="" class="btn btn-secondary d-block download-btn" target="_blank">Download Mods</a>
                 <details class="mod-dropdown">
                     <summary>View Mods</summary>
@@ -186,7 +186,7 @@
                     <p class="m-0 text-wrap text-light title fs-1" id="mod-title"></p>
                     <p class="m-0 text-wrap fs-1" id="mod-recommended" style="text-shadow: 2px 2px 0 black;"></p>
                 </div>   
-                <p class="m-0 text-wrap text-light fs-4" id="mod-desc"></p>
+                <p class="m-0 text-wrap text-light fs-4" id="mod-desc" style="text-shadow: 2px 2px 0 black;"></p>
                 <a href="" class="btn btn-secondary d-none download-btn" target="_blank">Download Mods</a>
                 <details class="mod-dropdown">
                     <summary>View Additional Mods</summary>
@@ -203,6 +203,68 @@
                     </table>
                 </details>
             </div>
+        </div>
+        <div class="features d-flex flex-column my-auto px-5 mx-5" id="features-section">
+            <p class="m-0 text-wrap text-light text-center title">Features</p>
+            <div class="features d-flex flex-wrap mt-3 justify-content-center gap-5">
+                <div class="card" style="width: clamp(12rem, 20vw, 24rem)">
+                    <div class="card-body mb-0" style="flex: 0 0 auto;">
+                        <h5 class="card-title"><b>Vanilla+</b></h5>
+                        <p class="card-text">Enhanced vanilla experience</p>
+                        <ul class="mb-0">
+                            <li class="card-text">Structures Revamp</li>
+                            <li class="card-text">Seasons</li>  
+                            <li class="card-text">QoLs</li>
+                        </ul>
+                    </div>
+                    <img src="./img/features-1.webp" class="card-img-bottom" alt="...">
+                </div>
+                <div class="card" style="width: clamp(12rem, 20vw, 24rem)">
+                    <div class="card-body mb-0" style="flex: 0 0 auto;">
+                        <h5 class="card-title"><b>New Dimensions</b></h5>
+                        <p class="card-text">Explore new worlds</p>
+                        <ul class="mb-0">
+                            <li class="card-text">BetterNether</li>
+                            <li class="card-text">BetterEnd</li>  
+                            <li class="card-text">Eternal Starlight</li>
+                        </ul>
+                    </div>
+                    <img src="./img/features-2.webp" class="card-img-bottom" alt="...">
+                </div>
+                <div class="card" style="width: clamp(12rem, 20vw, 24rem)">
+                    <div class="card-body mb-0" style="flex: 0 0 auto;">
+                        <h5 class="card-title"><b>Chatbot</b></h5>
+                        <p class="card-text">Gurt, the friendly yogurt bot</p>
+                        <ul class="mb-0">
+                            <li class="card-text">!yogurt for various in-game functions</li>
+                            <li class="card-text">!gurt &lt;Message&gt; to chat with Gurt</li>
+                        </ul>
+                    </div>
+                    <img src="./img/features-3.webp" class="card-img-bottom" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="join d-flex flex-column my-auto px-5 mx-5" id="join-section">
+            <p class="m-0 text-wrap text-light text-center title">Join the server</p>
+            <p class="m-0 text-wrap text-light text-center fs-3" style="text-shadow: 2px 2px 0 black;">Connect using the address below</p>
+            <div class="d-flex flex-wrap justify-content-center gap-lg-5 gap-md-4 gap-sm-0">  
+                <div class="d-flex flex-column align-items-center mt-3">
+                    <div class="server-ip d-flex flex-column align-items-center p-3">
+                        <p class="m-0 text-wrap text-light text-center fs-2" style="text-shadow: 2px 2px 0 black;" id="server-playit-address">xxxx.ply.gg</p>
+                        <p class="m-0 text-wrap text-light text-center fs-5" style="text-shadow: 1px 1px 0 black;">playit.gg address</p>
+                    </div>
+                    <a href="" class="download-btn btn btn-secondary d-block mx-auto" onclick="event.preventDefault(); navigator.clipboard.writeText(serverdata.ip_playit);">Copy Address</a>
+                </div>   
+                <div class="d-flex flex-column align-items-center mt-3">
+                    <div class="server-ip d-flex flex-column align-items-center p-3">
+                        <p class="m-0 text-wrap text-light text-center fs-2" style="text-shadow: 2px 2px 0 black;" id="server-tailscale-address">xxxx:25565</p>
+                        <p class="m-0 text-wrap text-light text-center fs-5" style="text-shadow: 1px 1px 0 black;">Tailscale address</p>
+                    </div>
+                    <a href="" class="download-btn btn btn-secondary d-block mx-auto" onclick="event.preventDefault(); navigator.clipboard.writeText(serverdata.ip_tailscale);">Copy Address</a>
+                </div>         
+            </div>  
+            <p class="m-0 text-wrap text-light text-center fs-5 mt-4" style="text-shadow: 2px 2px 0 black;" id="server-tailscale-address">*Tailscale requires invite*</p>
+            <a href="https://tailscale.com/download" class="download-btn btn btn-secondary d-block mx-auto" target="_blank">Download Tailscale Client</a>  
         </div>
     </section>
 </body>

@@ -104,6 +104,8 @@ get_server_data().then(() => {
     }
     let version_elem = document.getElementById("append-version");
     version_elem.innerHTML += `${serverdata.version}`;
+    document.getElementById("server-playit-address").innerHTML = `${serverdata.ip_playit}`;
+    document.getElementById("server-tailscale-address").innerHTML = `${serverdata.ip_tailscale}`;
 })
 
 // Mouse whel scroll

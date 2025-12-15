@@ -5,94 +5,9 @@
     "download_link": "https://drive.google.com/file/d/1-DA-jXhkLX3H2OAN5fD0AveNkvZNoG_0/view?usp=sharing",
     "mods": [
         {
-            "name": "Krypton",
-            "description": "Optimizes Minecraft networking stack",
-            "link": "https://modrinth.com/mod/krypton/version/0.2.8"
-        },
-        {
-            "name": "Iris",
-            "description": "Shader pack loader",
-            "link": "https://modrinth.com/mod/iris/version/1.8.1+1.21.1-fabric"
-        },
-        {
-            "name": "Dynamic FPS",
-            "description": "Reduces resource usage while Minecraft is in the background",
-            "link": "https://modrinth.com/mod/dynamic-fps/version/phWUwjYc"
-        },
-        {
-            "name": "Indium",
-            "description": "Sodium addon for Fabric Rendering API",
-            "link": "https://modrinth.com/mod/indium/version/1.0.35+mc1.21"
-        },
-        {
-            "name": "Entity Culling",
-            "description": "Hides Blocks/Entities that are not visible",
-            "link": "https://modrinth.com/mod/entityculling/version/MQuJQtw8"
-        },
-        {
-            "name": "ModernFix",
-            "description": "All-in-one mod that improves performance and fixes many bugs",
-            "link": "https://modrinth.com/mod/modernfix/version/5.20.0+mc1.21.1"
-        },
-        {
-            "name": "CIT Resewn",
-            "description": "Custom item textures pack",
-            "link": "https://modrinth.com/mod/cit-resewn/version/1.2.1+1.21"
-        },
-        {
-            "name": "Lithium",
-            "description": "Game logic optimization",
-            "link": "https://modrinth.com/mod/lithium/version/mc1.21.1-0.14.6-fabric"
-        },
-        {
-            "name": "Continuity",
-            "description": "Allows for connected textures",
-            "link": "https://modrinth.com/mod/continuity/version/3.0.0+1.21"
-        },
-        {
-            "name": "Enhanced Block Entities",
-            "description": "Reduce block entity FPS lag",
-            "link": "https://modrinth.com/mod/ebe/version/0.10.2+1.21"
-        },
-        {
-            "name": "More Culling",
-            "description": "Advanced culling to improve performance",
-            "link": "https://modrinth.com/mod/moreculling/version/1.0.3+1.21.1"
-        },
-        {
-            "name": "ImmediatelyFast",
-            "description": "Speeds up immediate mode rendering in Minecraft",
-            "link": "https://modrinth.com/mod/immediatelyfast/version/1.3.3+1.21.1-fabric"
-        },
-        {
             "name": "Sodium",
             "description": "Rendering optimization",
             "link": "https://modrinth.com/mod/sodium/version/mc1.21.1-0.6.5-fabric"
-        },
-        {
-            "name": "Noisium",
-            "description": "Optimises worldgen performance",
-            "link": "https://modrinth.com/mod/noisium/version/2.3.0+mc1.21-1.21.1"
-        },
-        {
-            "name": "CreativeCore",
-            "description": "Dependencies",
-            "link": "https://modrinth.com/mod/creativecore/version/EhLyjbcU"
-        },
-        {
-            "name": "Bad Optimizations",
-            "description": "Micro render optimizations",
-            "link": "https://modrinth.com/mod/badoptimizations/version/gTsJRSdq"
-        },
-        {
-            "name": "Thread Tweak",
-            "description": "Improves thread scheduling",
-            "link": "https://modrinth.com/mod/threadtweak/version/0.1.5"
-        },
-        {
-            "name": "Yet Another Config Lib",
-            "description": "Config library",
-            "link": "https://modrinth.com/mod/yacl/version/3.6.2+1.21-fabric"
         },
         {
             "name": "Sodium Extra",
@@ -105,14 +20,99 @@
             "link": "https://modrinth.com/mod/reeses-sodium-options/version/mc1.21.4-1.8.3+fabric"
         },
         {
-            "name": "FerriteCore",
-            "description": "Memory usage optimizations",
-            "link": "https://modrinth.com/mod/ferrite-core/version/7.0.2-hotfix-fabric"
+            "name": "Bad Optimizations",
+            "description": "Micro render optimizations",
+            "link": "https://modrinth.com/mod/badoptimizations/version/gTsJRSdq"
         },
         {
             "name": "C2ME",
             "description": "Concurrent Chunk Management Engine",
             "link": "https://modrinth.com/mod/c2me-fabric/version/0.3.0+alpha.0.314+1.21.1"
+        },
+        {
+            "name": "CIT Resewn",
+            "description": "Custom item textures pack",
+            "link": "https://modrinth.com/mod/cit-resewn/version/1.2.1+1.21"
+        },
+        {
+            "name": "Continuity",
+            "description": "Allows for connected textures",
+            "link": "https://modrinth.com/mod/continuity/version/3.0.0+1.21"
+        },
+        {
+            "name": "CreativeCore",
+            "description": "Dependencies",
+            "link": "https://modrinth.com/mod/creativecore/version/EhLyjbcU"
+        },
+        {
+            "name": "Dynamic FPS",
+            "description": "Reduces resource usage while Minecraft is in the background",
+            "link": "https://modrinth.com/mod/dynamic-fps/version/phWUwjYc"
+        },
+        {
+            "name": "Enhanced Block Entities",
+            "description": "Reduce block entity FPS lag",
+            "link": "https://modrinth.com/mod/ebe/version/0.10.2+1.21"
+        },
+        {
+            "name": "Entity Culling",
+            "description": "Hides Blocks/Entities that are not visible",
+            "link": "https://modrinth.com/mod/entityculling/version/MQuJQtw8"
+        },
+        {
+            "name": "FerriteCore",
+            "description": "Memory usage optimizations",
+            "link": "https://modrinth.com/mod/ferrite-core/version/7.0.2-hotfix-fabric"
+        },
+        {
+            "name": "ImmediatelyFast",
+            "description": "Speeds up immediate mode rendering in Minecraft",
+            "link": "https://modrinth.com/mod/immediatelyfast/version/1.3.3+1.21.1-fabric"
+        },
+        {
+            "name": "Indium",
+            "description": "Sodium addon for Fabric Rendering API",
+            "link": "https://modrinth.com/mod/indium/version/1.0.35+mc1.21"
+        },
+        {
+            "name": "Iris",
+            "description": "Shader pack loader",
+            "link": "https://modrinth.com/mod/iris/version/1.8.1+1.21.1-fabric"
+        },
+        {
+            "name": "Krypton",
+            "description": "Optimizes Minecraft networking stack",
+            "link": "https://modrinth.com/mod/krypton/version/0.2.8"
+        },
+        {
+            "name": "Lithium",
+            "description": "Game logic optimization",
+            "link": "https://modrinth.com/mod/lithium/version/mc1.21.1-0.14.6-fabric"
+        },
+        {
+            "name": "ModernFix",
+            "description": "All-in-one mod that improves performance and fixes many bugs",
+            "link": "https://modrinth.com/mod/modernfix/version/5.20.0+mc1.21.1"
+        },
+        {
+            "name": "More Culling",
+            "description": "Advanced culling to improve performance",
+            "link": "https://modrinth.com/mod/moreculling/version/1.0.3+1.21.1"
+        },
+        {
+            "name": "Noisium",
+            "description": "Optimizes worldgen performance",
+            "link": "https://modrinth.com/mod/noisium/version/2.3.0+mc1.21-1.21.1"
+        },
+        {
+            "name": "Thread Tweak",
+            "description": "Improves thread scheduling",
+            "link": "https://modrinth.com/mod/threadtweak/version/0.1.5"
+        },
+        {
+            "name": "Yet Another Config Lib",
+            "description": "Config library",
+            "link": "https://modrinth.com/mod/yacl/version/3.6.2+1.21-fabric"
         }
     ]
 }
