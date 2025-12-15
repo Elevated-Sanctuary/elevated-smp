@@ -6,151 +6,126 @@
     "mods": [
         {
             "name": "AdventureZ",
-            "version": "1.4.24",
             "description": "Adds a new endboss and other creatures",
             "link": "https://modrinth.com/mod/adventurez/version/1.4.24+1.21.1"
         },
         {
             "name": "Architectury API",
-            "version": "13.0.8",
             "description": "Dependencies",
             "link": "https://modrinth.com/mod/architectury-api/version/13.0.8+fabric"
         },
         {
             "name": "BackSlot",
-            "version": "1.2.16",
             "description": "Adds two slots to your inventory, the backslot and the beltslot, mainly for weapons.",
             "link": "https://modrinth.com/mod/backslot/version/1.2.16+1.21.1"
         },
         {
             "name": "BackSlotAddon",
-            "version": "1.1.2",
             "description": "Addon for the BackSlot mod",
             "link": "https://modrinth.com/mod/backslotaddon/version/1.1.2+1.21.1"
         },
         {
             "name": "BCLib",
-            "version": "21.0.13",
             "description": "Library Mod for BetterX",
             "link": "https://modrinth.com/mod/bclib/version/21.0.13"
         },
         {
             "name": "BetterEnd",
-            "version": "21.0.11",
             "description": "Adds new biomes into the End",
             "link": "https://modrinth.com/mod/betterend/version/21.0.11"
         },
         {
             "name": "BetterNether",
-            "version": "21.0.11",
             "description": "Adds new biomes, plants and materials to the Nether",
             "link": "https://modrinth.com/mod/betternether/version/21.0.11"
         },
         {
             "name": "Cardinal Components API",
-            "version": "6.1.2",
             "description": "Dependencies",
             "link": "https://modrinth.com/mod/cardinal-components-api/version/6.1.2"
         },
         {
             "name": "Carry On",
-            "version": "2.2.2",
             "description": "Allows players to pick up, carry, and place Entities",
             "link": "https://modrinth.com/mod/carry-on/version/TuSZSQeB"
         },
         {
             "name": "CICADA",
-            "version": "0.14.2",
             "description": "Dependencies",
             "link": "https://modrinth.com/mod/cicada/version/0.14.2+1.21-1.21.1"
         },
         {
             "name": "Cloth Config API",
-            "version": "15.0.140",
             "description": "Config screen API",
             "link": "https://modrinth.com/mod/cloth-config/version/15.0.140+fabric"
         },
         {
             "name": "End Remastered",
-            "version": "6.0.2",
             "description": "Overhauls the way players get to the End",
             "link": "https://modrinth.com/mod/endrem/version/6.0.2"
         },
         {
             "name": "Eternal Starlight",
-            "version": "0.2.0",
             "description": "Adds the magical and mysterious starlight dimension",
             "link": "https://modrinth.com/mod/eternal-starlight/version/0.2.0+1.21.1+fabric"
         },
         {
             "name": "Fabric API",
-            "version": "0.116.1",
             "description": "Dependencies",
             "link": "https://modrinth.com/mod/fabric-api/version/0.116.1+1.21.1"
         },
         {
             "name": "Fabric Language Kotlin",
-            "version": "1.13.3",
             "description": "Dependencies",
             "link": "https://modrinth.com/mod/fabric-language-kotlin/version/1.13.3+kotlin.2.1.21"
         },
         {
             "name": "Fabric Seasons",
-            "version": "2.4.2-BETA",
             "description": "Adds seasons to the game, dynamically changing biomes",
             "link": "https://modrinth.com/mod/fabric-seasons/version/2.4.2-BETA+1.21"
         },
         {
             "name": "Fabric Seasons: Extras",
-            "version": "1.3.2-BETA",
             "description": "Adds custom blocks and items to Fabric Seasons",
             "link": "https://modrinth.com/mod/fabric-seasons-extras/version/1.3.2-BETA+1.21"
         },
         {
             "name": "Fzzy Config",
-            "version": "0.7.0",
             "description": "Dependencies",
             "link": "https://modrinth.com/mod/fzzy-config/version/0.7.0+1.21"
         },
         {
             "name": "Mod Menu",
-            "version": "11.0.2",
             "description": "Adds a mod menu to view the list of installed mods",
             "link": "https://modrinth.com/mod/modmenu/version/11.0.2"
         },
         {
             "name": "Oracle Index",
-            "version": "0.3.0",
             "description": "Provides an in-game documentation viewer for mods",
             "link": "https://modrinth.com/mod/oracle-index/version/8ZU8Z2O1"
         },
         {
             "name": "owo-lib",
-            "version": "0.12.5.4",
             "description": "Dependencies",
             "link": "https://modrinth.com/mod/owo-lib/version/0.12.15.4+1.21"
         },
         {
             "name": "Simply Swords",
-            "version": "1.60.11",
             "description": "Adds more weapons",
             "link": "https://modrinth.com/mod/simply-swords/version/1.60.11-1.21.1"
         },
         {
             "name": "Travelers Backpack",
-            "version": "10.1.22",
             "description": "Unique and upgradeable backpacks with customisation",
             "link": "https://modrinth.com/mod/travelersbackpack/version/1.21.1-10.1.22"
         },
         {
             "name": "World Weaver",
-            "version": "21.0.13",
             "description": "Dependencies",
             "link": "https://modrinth.com/mod/worldweaver/version/21.0.13"
         },
         {
             "name": "WunderLib",
-            "version": "21.0.8",
             "description": "Dependencies",
             "link": "https://modrinth.com/mod/wunderlib/version/21.0.8"
         }

@@ -70,6 +70,8 @@ function play_audio(default_volume = 0.5) {
         audio.muted = volumeSlider.value == 0;
         muteBtn.innerHTML = audio.muted ? `<i class="bi bi-volume-mute-fill"></i>` : `<i class="bi bi-volume-up-fill"></i>`;
     });
+
+    return audio;
 }
 
 function scrolldir(dir) {
@@ -129,5 +131,5 @@ window.addEventListener("scroll", () => {
     }
 });
 
-play_audio(default_volume);
+const audio = play_audio(default_volume);
 load_mod_data(['addition', 'barebone', 'extreme', 'optimized'])
