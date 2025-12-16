@@ -30,6 +30,13 @@
     font-display: swap;
 }
 
+html {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/web-bg-blur.webp);
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
 body {
     font-family: 'Minecraft', sans-serif;
     /* weight 400 and 700 */
