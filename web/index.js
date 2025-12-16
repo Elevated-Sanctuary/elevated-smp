@@ -97,11 +97,6 @@ get_server_data().then(() => {
     // console.log(serverdata);
     document.getElementById("server-name").innerHTML = serverdata.name;
     document.getElementById("server-desc").innerHTML = serverdata.description;
-    if (serverdata.ip_playit && serverdata.ip_playit.length > 0) {
-        let playit_ip_elem = document.getElementById("server-playit-ip");
-        playit_ip_elem.innerHTML = `${serverdata.ip_playit}`;
-        playit_ip_elem.classList.remove("d-none");
-    }
     let version_elem = document.getElementById("append-version");
     version_elem.innerHTML += `${serverdata.version}`;
     document.getElementById("server-playit-address").innerHTML = `${serverdata.ip_playit}`;
